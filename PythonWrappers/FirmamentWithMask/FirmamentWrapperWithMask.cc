@@ -41,7 +41,7 @@ BOOST_PYTHON_MEMBER_FUNCTION_OVERLOADS(configureWithOne, FirmamentWithMask::conf
 BOOST_PYTHON_MEMBER_FUNCTION_OVERLOADS(configureWithThree, FirmamentWithMask::configure,1, 2);
 
 BOOST_PYTHON_MODULE(FirmamentWithMask)
-{  class_<Firmament>("Firmament",init<optional<int,int,int> >())
+{ class_<Firmament>("Firmament",init<optional<int,int,int> >())
             //Wrappers for the methods that are defined.
             .def("resize",&Firmament::resize)
             .def("setDiffuseRadiation",&Firmament::setDiffuseRadiation)
@@ -132,7 +132,6 @@ BOOST_PYTHON_MODULE(FirmamentWithMask)
 
     class_<TMatrix<double> > ("TMatrix"); //Wrapper for the 3D matrix.
 
-
     scope sky = class_<SkyNamespaceDummy>("sky"); //wrapping the namespace sky using the dummy variable
     class_<sky::FindNextMask>("FindNextMask",init<int>()); // Wrapping the real namespace sky
     class_<Lex,boost::noncopyable>("Lex"); // Wrapping the class Lex with copy constructors
@@ -144,7 +143,7 @@ BOOST_PYTHON_MODULE(FirmamentWithMask)
             .def_readwrite("first", &std::pair<int, string>::first)
             .def_readwrite("second", &std::pair<int, string>::second);
 
-  //  class_<Firmament>("Firmament"); // Wrapping Frimament
+   // class_<Firmament>("Firmament"); // Wrapping Frimament
     //class_<FirmamentWithMask,bases<Firmament>,boost::noncopyable >("FirmamentWithMask",init<optional<int,int,double> >()) // Derived data type FirmamentWithMask
      class_<FirmamentWithMask,bases<Firmament> >("FirmamentWithMask",init<optional<int,int,double> >()) // Derived data type FirmamentWithMask
             // Function Definition wrappers
