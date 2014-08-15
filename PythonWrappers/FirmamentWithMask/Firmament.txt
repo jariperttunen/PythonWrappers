@@ -1,0 +1,14 @@
+#Sectors 
+6    #incl
+6    #azim
+1450  #Radiation MJ
+#Gap data follows. So far you have to denote in the program
+#if you want to use the new  format. The default is  
+#the old style single gap. See main.cc tree_init.initialize(tree)
+#and the beginning of the growth loop for detaila.s
+#Old style single gap for simulations
+#GapData.fun
+#New style set of gap files
+#100 GapData30.fun
+#100 GapData5.fun
+10 GapData30.fun #iterations [0:6]
