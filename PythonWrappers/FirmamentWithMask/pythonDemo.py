@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from shutil import *
 # To copy the .so file to the present directory. This is done to run this file from wherever required. So the copy command works like #the first parameter is the source from where the .so file needs to be obtained and then the destination path where it needs to be #copied.
-copy("/home/likewise-open/IN/gopalkri/Developer/core-model/PythonWrappers/FirmamentWithMask/build/lib.linux-x86_64-2.7/FirmamentWithMask.so","/home/likewise-open/IN/gopalkri/Developer/core-model/PythonWrappers/FirmamentWithMask")
+#copy("FirmamentWithMask/build/*/FirmamentWithMask.so",".")
 from FirmamentWithMask import *
 d = sky.FirmamentWithMask(10,20,20)   # calling the FirmamentWithMask constructor.
 d.resize(20,18,15)                    # resizing the FirmamentWithMask Object.
