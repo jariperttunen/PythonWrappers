@@ -88,7 +88,7 @@ BOOST_PYTHON_MODULE(FirmamentWithMask)
             //****************************************************************************************************************************************************************
 
             .add_property("num_of_incl",&Firmament::getNoOfInclinations)
-            .add_property("num_of_azim",&Firmament::getNoOfInclinations)
+            .add_property("num_of_azim",&Firmament::getNoOfAzimuths)
             .add_property("numOfSectors",&Firmament::numberOfRegions)
             .add_property("diffuseRadPlane",&Firmament::diffusePlaneSensor)
             .add_property("directRadPlane",&Firmament::setDirectRadiation)
