@@ -15,7 +15,7 @@ from distutils.extension import Extension
 setup(name="FirmamentWithMask",version="1.0",
     ext_modules=[
         Extension("FirmamentWithMask", ["FirmamentWrapperWithMask.cc","../../Firmament/Firmament.cc","../../Firmament/FirmamentWithMask.cc"],
-        libraries = ["boost_python-mt-py27",'cxxadt'],
+        libraries = ["boost_python-mt",'cxxadt'],
         library_dirs = ['/opt/local/lib','../../c++adt/lib'],
         include_dirs = ['/opt/local/include','../../c++adt/include','../../Firmament/include',
                         '../../stl-lignum/include'])
