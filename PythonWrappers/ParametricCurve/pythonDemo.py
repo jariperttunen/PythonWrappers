@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 from shutil import *
-# To copy the .so file to the present directory. This is done to run this file from wherever required. So the copy command works like #the first parameter is the source from where the .so file needs to be obtained and then the destination path where it needs to be #copied.
-copy("/home/likewise-open/IN/gopalkri/Developer/core-model/PythonWrappers/ParametricCurve/build/lib.linux-x86_64-2.7/ParametricCurveWrapper.so","/home/likewise-open/IN/gopalkri/Developer/core-model/PythonWrappers/ParametricCurve")
+# To copy the .so file to the present directory. This is done to run this file from wherever required.
+# So the copy command works like #the first parameter is the source from where the .so file needs to be obtained and then the destination
+#path where it needs to be copied.
+copy("build/lib.macosx-10.9-x86_64-2.7/ParametricCurveWrapper.so",".")
 
 from  ParametricCurveWrapper import *
 
