@@ -15,7 +15,7 @@ from distutils.extension import Extension
 setup(name="ParametricCurveWrapper",version="1.0",
     ext_modules=[
         Extension("ParametricCurveWrapper", ["ParametricCurveWrapper.cc","../../c++adt/src/ParametricCurve.cc"],
-        libraries = ["boost_python-mt-py27",'cxxadt'],
+        libraries = ["boost_python-mt",'cxxadt'],
         library_dirs = ['/opt/local/lib','../../c++adt/lib'],
         include_dirs = ['/opt/local/include','../../c++adt/include','../../c++adt/include',
                         '../../stl-lignum/include'])
