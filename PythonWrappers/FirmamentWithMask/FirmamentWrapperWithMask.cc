@@ -46,6 +46,7 @@ BOOST_PYTHON_MODULE(FirmamentWithMask)
             .def("resize",&Firmament::resize)
             .def("setDiffuseRadiation",&Firmament::setDiffuseRadiation)
             .def("setDirectRadiation",&Firmament::setDirectRadiation)
+            .def("setSunPosition",&Firmament::setSunPosition)
             .def("outDiff", &Firmament::outDiff)
             .def("outAz",&Firmament::outAz) // this needs to be 3D variable
             .def("getInclinationIndex",&Firmament::getInclinationIndex)
